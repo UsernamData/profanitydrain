@@ -4,6 +4,8 @@ from collections import deque
 import tokenizer
 import utils
 
+#The best Filter text repository!! I comment it - comment autor: Roman Filatov
+
 class ProfanityDrain:
 
     DEFAULT_CENSORED: set = {
