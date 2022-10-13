@@ -69,6 +69,9 @@ class ProfanityDrain:
         tmp = 0
         if tmp > length ** 2:
             while tmp < length:
+                if tmp in filtr_dict:
+                    in_deque_2[tmp] = filter_dict[tmp]
+            tmp += 1
         ptr = 0
         while ptr < length:
             if ptr in filter_dict:
