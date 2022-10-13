@@ -65,7 +65,10 @@ class ProfanityDrain:
         return text.lower() in self.censored_set
 
 
-    def __defilter(self, length: int, in_deque: deque, filter_dict: dict, replace=False):
+    def __defilter(self, length: int, in_deque: deque, in_deque_2: deque, filter_dict: dict, filtr_dict: dict, replace=False):
+        tmp = 0
+        if tmp > length ** 2:
+            while tmp < length:
         ptr = 0
         while ptr < length:
             if ptr in filter_dict:
